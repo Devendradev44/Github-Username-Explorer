@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background: #1f1f1f;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  /* center whole layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* main container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* search section */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.searchBox input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+.searchBox button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* loading / error text */
+.status {
+  margin-top: 15px;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+/* user card */
+.card {
+  background: white;
+  color: #333;
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 350px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stats {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+/* user not found */
+.notFound {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* responsive */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .searchBox input {
+    width: 100%;
+  }
+}
